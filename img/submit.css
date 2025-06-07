@@ -1,0 +1,219 @@
+body {
+    font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: block;
+}
+.main-nav {
+    background-color: #0056b3;
+    overflow: hidden;
+    padding: 0;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.main-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+.main-nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: normal;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    line-height: 60px;
+    white-space: nowrap;
+}
+.main-nav li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #FFD700;
+}
+body > *:not(.coffee-nav) {
+    margin-top: 80px;
+}
+.container {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    text-align: center;
+    color: #0056b3;
+    margin-top: 20px;
+}
+h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #eee;
+    margin: 20px 0;
+}
+ul.intro-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ul.intro-list li {
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    font-size: 18px;
+}
+ul.intro-list li strong {
+    color: #0056b3;
+}
+.logo-img {
+    display: block;
+    margin: 0 auto 10px auto;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    width: 300px;
+    height: 100px;
+}
+.face-img {
+    display: block;
+    margin: 0 auto 10px auto;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    width: 300px;
+    height: 400px;
+}
+.profile-img {
+    display: block;
+    margin: 10px auto;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #0056b3;
+}
+ol.food-list {
+    list-style: decimal;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+ol.food-list li {
+    background-color: #fff;
+    border: none;
+    padding: 5px 0;
+    font-size: 16px;
+}
+.auth-form {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+.auth-form label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.auth-form input[type="text"],
+.auth-form input[type="password"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+.auth-form input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+.auth-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.member-container {
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.member-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.member-container label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+.member-container input[type="text"],
+.member-container input[type="password"],
+.member-container input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 22px);
+    font-size: 16px;
+    box-sizing: border-box;
+}
+.member-container .radio-group,
+.member-container .checkbox-group {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 16px;
+    margin-top: 5px;
+}
+.member-container .radio-group label,
+.member-container .checkbox-group label {
+    margin-bottom: 0;
+    font-weight: normal;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+.member-container input[type="submit"] {
+    padding: 12px 25px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.member-container input[type="submit"]:hover {
+    background-color: #0056b3;
+}
