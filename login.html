@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원인증</title>
+    <link type="text/css" rel="stylesheet" href="submit.css">
+</head>
+<body>
+
+<nav class="main-nav">
+    <ul>
+        <li><a href="main.html">메인페이지</a></li>
+        <li><a href="bok.html">자기소개</a></li>
+        <li><a href="school.html">미래플러스대학</a></li>
+        <li><a href="login.html">회원인증</a></li>
+        <li><a href="member.html">회원가입</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <br>
+    <h2>회원인증</h2>
+    <hr>
+    <form name="fo" method="get" class="auth-form">
+        <label for="userID">사용자 ID:</label>
+        <input type="text" id="userID" name="userID" size="15"><br>
+        <label for="password">비밀 번호:</label>
+        <input type="password" id="password" name="password" size="15"><br>
+        <!-- <input type="submit" value="로그인">
+        <input type="submit" value="회원가입"> -->
+        <button type="button" onclick="location.href='member.html'">로그인</button>
+
+        <button type="button" onclick="location.href='member.html'">회원가입</button>
+    </form>
+</div>
+<div class="button-group">
+    <a href="main.html" class="footer-button" title="메인페이지로 이동">메인페이지</a>
+    <a href="bok.html" class="footer-button" title="자기소개">자기소개</a>
+    <a href="school.html" class="footer-button" title="미래플러스대학">미래플러스대학</a>
+    <!-- <a href="login.html" class="footer-button" title="회원인증">회원인증</a> -->
+    <a href="member.html" class="footer-button" title="회원가입">회원가입</a>
+</div>
+
+</body>
+</html>
